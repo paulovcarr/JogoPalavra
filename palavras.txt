@@ -1,0 +1,50 @@
+AMBIVALENCIA;Estado de possuir simultaneamente sentimentos ou atitudes contraditórias em relação a algo.
+UBIQUIDADE;Capacidade de estar presente em toda parte ao mesmo tempo.
+ESTIGMA;Marca ou sinal que desqualifica ou desabona alguém ou algo.
+EFEMERIDADE;Qualidade do que dura pouco, transitório.
+XELOFONE;Instrumento musical da família da percussão.
+HEGEMONIA;Predominância de um sobre outros; supremacia.
+INTERMITENTE;Que cessa e recomeça por intervalos.
+RECESSO;Suspensão temporária das atividades.
+PARADOXO;Figura de linguagem que une ideias contrárias, mas com sentido.
+PERNICIOSO;Que causa grande mal ou prejuízo; nocivo.
+DISCRICIONARIO;Que depende da vontade ou do arbítrio de uma autoridade.
+INTEMPERIE;Condição climática rigorosa; mau tempo.
+PRODIGIO;Coisa ou pessoa extraordinária, que causa admiração.
+ESCUSO;Que está oculto, secreto ou fora do comum.
+CONCISO;Que é breve, resumido e direto.
+EXEGESE;Interpretação minuciosa de um texto, especialmente sagrado ou legal.
+CRISE;Momento de instabilidade ou mudança brusca.
+ALACRIDADE;Disposição alegre e cheia de vivacidade.
+JUBILO;Sentimento de intensa alegria e satisfação.
+SINFONIA;Composição musical para orquestra, geralmente em quatro movimentos.
+AZIMUTE;Ângulo medido no plano do horizonte em relação ao Norte.
+IDILIO;Aventura amorosa, geralmente terna e passageira.
+REITERAR;Fazer algo novamente; repetir.
+VICISSITUDE;Mudança ou alteração na vida, geralmente de forma inesperada.
+AUSTERIDADE;Rigor excessivo na moral, nos costumes ou nas despesas.
+MORIBUNDO;Que está à beira da morte ou em decadência.
+CALAMIDADE;Desastre de grandes proporções.
+ELEVACAO;Ato ou efeito de subir ou de se tornar superior.
+ALVISSARAS;Boas novas, notícia agradável.
+PRESCINDIR;Dispensar, abrir mão ou não precisar de algo.
+SUBSTANCIAL;Que tem a natureza de essência; importante.
+TACITURNO;Pessoa calada, que não gosta de conversar.
+QUIXOTESCO;Que é idealista, fantasioso ou impraticável (referência literária).
+ESPECTRO;Imagem fantasmagórica ou uma gama de frequências.
+INEFICAZ;Que não produz o efeito desejado ou esperado.
+LITURGIA;Conjunto de ritos e cerimônias de um culto religioso.
+RETROGRADO;Que se opõe ao progresso; ultrapassado.
+ECLIPSE;Fenômeno astronômico de ocultação total ou parcial de um astro.
+ESCATOLOGIA;Estudo sobre os últimos eventos da história do mundo.
+MISANTROPO;Indivíduo que tem aversão à convivência humana.
+PERCURSO;Trajeto a ser seguido ou que foi seguido.
+IMPETO;Movimento violento e repentino; impulso.
+PLETORA;Abundância excessiva; fartura.
+HETEROGENEO;Composto por elementos de naturezas distintas.
+SUBJETIVO;Que é próprio de um indivíduo e não depende da realidade externa.
+ANALOGIA;Relação de semelhança entre coisas diferentes.
+CAUTELA;Prevenção ou cuidado no agir.
+PROLEGOMENO;Discurso ou escrito preliminar, introdutório.
+REDUNDANCIA;Repetição desnecessária de uma ideia ou termo.
+ZELO;Cuidado, dedicação e atenção.
