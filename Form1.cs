@@ -17,6 +17,7 @@ namespace JogoPalavra
             private string dica;
             private List<char> letrasTentadas;
             private int tentativasRestantes;
+            private bool ganhouJogo;
 
 
             public PalavraJogo()
@@ -24,6 +25,7 @@ namespace JogoPalavra
                 EscolhePalavra();
                 tentativasRestantes = 2 * contaLetras();
                 letrasTentadas = new List<char>();
+                ganhouJogo = false;
             }
 
             private void EscolhePalavra()
@@ -111,6 +113,7 @@ namespace JogoPalavra
                                 letrasTentadas.Add(letra);
                             }
                         }
+                        ganhouJogo = true;
                         return true;
                     }
                     else
@@ -140,6 +143,7 @@ namespace JogoPalavra
             public string exibePalavra()
             {
                 string exibicao = "";
+                bool faltaLetra = false;
                 if (tentativasRestantes <= 0)
                 {
                     return palavraSecreta; // Revela a palavra se as tentativas acabaram
@@ -155,12 +159,18 @@ namespace JogoPalavra
                         else
                         {
                             exibicao += "? ";
+                            faltaLetra = true;
                         }
                     }
+                    ganhouJogo = !faltaLetra;
                     return exibicao.Trim();
                 }
             }
 
+            public bool ganhou()
+            {
+                return ganhouJogo;
+            }
             public string exibeDica()
             {
                 return dica;
@@ -169,23 +179,41 @@ namespace JogoPalavra
 
         private void btn_Teste_Click(object sender, EventArgs e)
         {
-            if (palavra.Tentativa(txt_Entrada.Text))
+            if (palavra.TentativasRestantes() <= 0 || palavra.ganhou())
             {
-                MessageBox.Show("Correto!");
+                palavra = new PalavraJogo();
+                lbl_Palavra.Text = palavra.exibePalavra();
+                lbl_Tentadas.Text = "Informe uma letra ou a palavra completa";
+                lbl_Dica.Text = "Dica: " + palavra.exibeDica();
+                btn_Teste.Text = "Verificar";
+                return;
             }
             else
             {
-                if (palavra.TentativasRestantes() <= 0)
+                if (palavra.Tentativa(txt_Entrada.Text))
                 {
-                    MessageBox.Show("Game Over! A palavra era: " + palavra.exibePalavra());
-
+                    MessageBox.Show("Correto!");
+                    if (palavra.ganhou())
+                    {
+                        MessageBox.Show("Parabéns! Você ganhou o jogo!");
+                        btn_Teste.Text = "Novo Jogo";
+                    }
                 }
                 else
-                    MessageBox.Show("Incorreto! Tentativas restantes: " + palavra.TentativasRestantes());
+                {
+                    if (palavra.TentativasRestantes() <= 0)
+                    {
+                        MessageBox.Show("Game Over! A palavra era: " + palavra.exibePalavra());
+                        btn_Teste.Text = "Novo Jogo";
+
+                    }
+                    else
+                        MessageBox.Show("Incorreto! Tentativas restantes: " + palavra.TentativasRestantes());
+                }
+                lbl_Palavra.Text = palavra.exibePalavra();
+                lbl_Tentadas.Text = "Letras tentadas: " + palavra.exibeLetrasTentadas();
+                txt_Entrada.Clear();
             }
-            lbl_Palavra.Text = palavra.exibePalavra();
-            lbl_Tentadas.Text = "Letras tentadas: " + palavra.exibeLetrasTentadas();
-            txt_Entrada.Clear();
         }
 
         private void txt_Entrada_TextChanged(object sender, EventArgs e)
